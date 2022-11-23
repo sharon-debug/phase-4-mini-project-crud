@@ -21,6 +21,7 @@ class SpicesController < ApplicationController
 
     def destroy
         spice = Spice.find_by(id: params[:id])
+        #delete
         spice.destroy
         head :no_content
     end
